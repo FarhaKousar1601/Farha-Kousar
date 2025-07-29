@@ -1,0 +1,89 @@
+// Portfolio Website Code for Farha Kousar
+
+// Prompt for AI Image Generation Tool (e.g., DALL·E or similar)
+"Generate a modern, professional portfolio website hero section with a soft blue and lavender color scheme. Clean, minimal design with rounded cards, subtle shadows, and elegant icons. Include a section for a resume download button, a blog/articles preview, and a dark/light mode toggle. Use sans-serif fonts like Inter or Poppins. Display a contact form and embed YouTube demo or GitHub link previews."
+
+---
+
+// HTML + TailwindCSS Code (can be deployed on GitHub Pages/Vercel)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farha Kousar | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    // Toggle dark/light
+    function toggleMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white font-sans">
+  <header class="p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Farha Kousar</h1>
+    <button onclick="toggleMode()" class="bg-teal-500 px-3 py-1 rounded text-white">Toggle Mode</button>
+  </header>
+
+  <section class="p-8 text-center">
+    <h2 class="text-3xl font-semibold">Data Analyst | BI Developer | Python Enthusiast</h2>
+    <p class="mt-2">Transforming data into insights through clean design & smart analysis.</p>
+    <a href="./Farha_Kousar_Resume.pdf" download class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded">📄 Download Resume</a>
+  </section>
+
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 p-8">
+    <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">
+      <h3 class="text-lg font-bold mb-2">📊 Walmart Sales Data</h3>
+      <p>Analyzed sales trends using Excel & Power BI to improve inventory strategies.</p>
+    </div>
+    <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">
+      <h3 class="text-lg font-bold mb-2">📦 Swiggy Instamart Insights</h3>
+      <p>Processed data in Python & Google Sheets to optimize delivery & promos.</p>
+    </div>
+    <!-- Add more project cards here -->
+  </section>
+
+  <section class="p-8">
+    <h2 class="text-2xl font-semibold mb-4">📥 Contact Me</h2>
+    <form action="https://formspree.io/f/mwkdzynr" method="POST" class="grid gap-4 max-w-lg">
+      <input type="text" name="name" placeholder="Your Name" required class="p-2 rounded border">
+      <input type="email" name="email" placeholder="Your Email" required class="p-2 rounded border">
+      <textarea name="message" placeholder="Your Message" required class="p-2 rounded border"></textarea>
+      <button type="submit" class="bg-teal-600 text-white px-4 py-2 rounded">Send</button>
+    </form>
+  </section>
+
+  <section class="p-8">
+    <h2 class="text-2xl font-semibold mb-4">📰 Blog / Articles</h2>
+    <div class="space-y-4">
+      <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded">
+        <h3 class="font-bold">#DataAnalyst vs #DataScience</h3>
+        <p>Exploring the difference between roles and tools. <a href="#" class="text-blue-600">Read more →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-8">
+    <h2 class="text-2xl font-semibold mb-4">📺 Demo Videos</h2>
+    <iframe class="w-full h-64 rounded shadow" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <footer class="p-4 text-center text-sm">
+    &copy; 2025 Farha Kousar | <a href="mailto:farhakousar576@gmail.com" class="text-blue-500">Contact</a> |
+    <a href="https://github.com/FarhaKousar1601" class="text-blue-500">GitHub</a> |
+    <a href="https://linkedin.com/in/farhakousar" class="text-blue-500">LinkedIn</a>
+  </footer>
+  <script>feather.replace()</script>
+</body>
+</html>
+```
+
+---
+
+You can deploy this on [**GitHub Pages**](https://pages.github.com/) or [**Vercel**](https://vercel.com/) by pushing the code to your GitHub and connecting your custom domain `www.farhakousar16.me`.
+
+Would you like help setting up a blog CMS, or customizing animation effects next?
